@@ -5,10 +5,8 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto ipsam eaque, veniam illum nobis tenetur quam? Modi vel eum, veniam nulla voluptates officiis omnis itaque repellendus. Quasi, dicta vel.</p>
   </section>
   <highcharts-chart 
-    [Highcharts]="Highcharts"
-    [options]="optFromInput"
-    [(update)]="updateFromInput"
-    [oneToOne]=true
-    (chartInstance)="logChartInstance($event)"
+    [Highcharts]="highcharts"
+    [options] = "chartOptions"
+
   ></highcharts-chart>
 </article>
