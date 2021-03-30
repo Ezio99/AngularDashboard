@@ -1,0 +1,14 @@
+<h2>Scenario 1:Cost Analysis</h2>
+<article>
+  <section>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque numquam fugit voluptate animi obcaecati placeat nesciunt hic sint maxime saepe earum quam beatae, tempore minima eaque recusandae totam! Voluptate, non!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto ipsam eaque, veniam illum nobis tenetur quam? Modi vel eum, veniam nulla voluptates officiis omnis itaque repellendus. Quasi, dicta vel.</p>
+  </section>
+  <highcharts-chart 
+    [Highcharts]="Highcharts"
+    [options]="optFromInput"
+    [(update)]="updateFromInput"
+    [oneToOne]=true
+    (chartInstance)="logChartInstance($event)"
+  ></highcharts-chart>
+</article>
