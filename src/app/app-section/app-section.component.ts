@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as Highcharts from 'highcharts';
+// import * as Highcharts from 'highcharts';
+import * as Highcharts from 'highcharts/highstock';
 
 @Component({
   selector: 'app-app-section',
@@ -19,6 +20,11 @@ export class AppSectionComponent implements OnInit {
          height:400,
          type: "spline"
       },
+      navigation: {
+        buttonOptions: {
+            enabled: true
+        }
+      },
       title: {
          text: "Monthly Average Temperature"
       },
@@ -27,7 +33,10 @@ export class AppSectionComponent implements OnInit {
       },
       xAxis:{
          categories:["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      //   scrollbar: {
+      //         enabled: true
+      //     },
       },
       yAxis: {          
          title:{
@@ -40,7 +49,7 @@ export class AppSectionComponent implements OnInit {
       series: [
          {
             name: 'Tokyo',
-            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,26.5, 23.3, 18.3, 13.9, 9.6]
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,26.5, 23.3, 18.3, 13.9, 9.6,12,14,15,16]
          },
          {
             name: 'New York',
@@ -56,6 +65,8 @@ export class AppSectionComponent implements OnInit {
          }
       ]
    };
+
+
 
 
 
