@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 // import * as Highcharts from 'highcharts';
 import * as Highcharts from 'highcharts/highstock';
+import HC_data from "highcharts/modules/data";
+// import * as data from "../../assets/test2.csv";
+HC_data(Highcharts);
 
 @Component({
   selector: 'app-app-section',
@@ -14,11 +17,13 @@ export class AppSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
   highcharts = Highcharts;
    chartOptions = {   
       chart: {
          height:400,
-         type: "spline"
+         type: "column"
       },
       navigation: {
         buttonOptions: {
