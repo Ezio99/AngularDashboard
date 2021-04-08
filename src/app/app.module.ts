@@ -5,15 +5,21 @@ import { HighchartsChartModule } from 'highcharts-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppSectionComponent } from './app-section/app-section.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { PerformanceAnalysisComponent } from './performance-analysis/performance-analysis.component';
+import { CostAnalysisComponent } from './cost-analysis/cost-analysis.component';
+import { CorrelationComponent } from './correlation/correlation.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppSectionComponent,
-    HeaderComponent
+    HeaderComponent,
+    PerformanceAnalysisComponent,
+    CostAnalysisComponent,
+    CorrelationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

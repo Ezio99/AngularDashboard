@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color:  lightgray;
+    background-color: #80ffdb;
+    /*#66FCF1;*/
   }
+
+.card{
+  background-color: #121013;
+}

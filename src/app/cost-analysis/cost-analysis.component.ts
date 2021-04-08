@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-// import * as Highcharts from 'highcharts';
 import * as Highcharts from 'highcharts/highstock';
 
 @Component({
-  selector: 'app-app-section',
-  templateUrl: './app-section.component.html',
-  styleUrls: ['./app-section.component.css']
+  selector: 'app-cost-analysis',
+  templateUrl: './cost-analysis.component.html',
+  styleUrls: ['./cost-analysis.component.css']
 })
-export class AppSectionComponent implements OnInit {
+export class CostAnalysisComponent implements OnInit {
 
   constructor() { }
 
@@ -65,9 +64,4 @@ export class AppSectionComponent implements OnInit {
          }
       ]
    };
-
-
-
-
-
 }
