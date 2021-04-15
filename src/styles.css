@@ -1,12 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
 body{
-    background-color: #80ffdb;
-    /*#f5d6bb;
-    #f8b195;
-    #ecc29d
-    #80ffdb;
-    #66FCF1;*/
-  }
+  background-image: linear-gradient(to right, #78ff90, #00f6c0, #00e8e7, #00d7fd, #00c2ff, #4dbaff, #77b1ff, #9ba6fe, #b5acfe, #cbb2fd, #deb9fc, #eec1fb);
+}
 
 .card{
   background-color: #121013;
